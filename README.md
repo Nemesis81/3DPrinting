@@ -7,6 +7,8 @@ all parts are build from scratch and not based on Dagoma(C)
 the target of that parts is to improve the rigidity of the original design.
 all screw and rod size are design to match the one I’ve got. you can easily (more or less) modify them for other type of screw.
 
+an other motivation is to test the excelent FreeCAD Software. everything is done with freecad, except the slicing and Gcode.... for th moment
+http://www.freecadweb.org
 
 ## Bracket Sup
 X Printer Axis is mainly improve by the Superior Bracket (BracketSup)
