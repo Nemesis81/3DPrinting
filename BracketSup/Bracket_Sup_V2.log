@@ -1,0 +1,163 @@
+Cura_SteamEngine version 15.04.6
+Copyright (C) 2014 David Braam
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+Default config 'default.cfg' not used
+Loading /Volumes/doc/Thierry/Documents/Informatique/3DPrinting/Git/3DPrinting/BracketSup/Bracket_Sup_V2.stl from disk...
+Loaded from disk in 0.053s
+Analyzing and optimizing model...
+  Face counts: 82674 -> 63594 76.9%
+  Vertex counts: 248022 -> 31730 12.8%
+  Size: 139.800000 111.000000 51.251000
+  vMin: 34.904000 46.000000 0.000000
+  vMax: 174.704000 157.000000 51.251000
+  vMin: 34.904000 46.000000 -0.051000
+  vMax: 174.704000 157.000000 51.200000
+  Matrix: 1.000000 0.000000 0.000000
+  Matrix: 0.000000 1.000000 0.000000
+  Matrix: 0.000000 0.000000 1.000000
+Optimize model 0.111s 
+Slicing model...
+Layer count: 256
+Sliced model in 0.257s
+Generating support map...
+Generating layer parts...
+Generated layer parts in 0.149s
+Generated inset in 0.921s
+Generated up/down skin in 2.005s
+Wrote layers in  3.48s.
+Wrote  21.6 MB.
+Total time elapsed  6.98s.
+Print time: 38822
+Filament: 29468
+Filament2: 0
+#############CURA PLUGIN SETTINGS#############
+/Applications/Cura.app/Contents/Resources/CuraEngine
+-v
+-s
+supportZDistance=0
+-s
+posx=104804.324593
+-s
+initialLayerSpeed=20.0
+-s
+supportXYDistance=0
+-s
+supportEverywhere=0
+-s
+filamentDiameter=1700.0
+-s
+insetXSpeed=50.0
+-s
+initialLayerThickness=300.0
+-s
+supportAngle=-1.0
+-s
+fanFullOnLayerNr=2.0
+-s
+raftBaseThickness=3.0
+-s
+retractionSpeed=45.0
+-s
+fanSpeedMax=100.0
+-s
+layerThickness=200.0
+-s
+endCode=M104 S0
+M106 ;start fan full power
+M140 S0 ;heated bed heater off (if you have it)
+G91 ;relative positioning
+G1 E-1 F300 ;retract the filament a bit before lifting the nozzle, to release some of the pressure
+G1 Z+0.5 E-2 X-20 Y-20 F{travel_speed} ;move Z up a bit and retract filament even more
+G28 X0 Y0 ;move X/Y to min endstops, so the head is out of the way;
+G1 Z+25 ;move Z up 2,5cm
+G4 P60000
+M107 ;stop fan
+M84 ;shut down motors ;{profile_string}
+M908
+-s
+minimalExtrusionBeforeRetraction=100.0
+-s
+spiralizeMode=0.0
+-s
+retractionMinimalDistance=1500.0
+-s
+skirtMinLength=0
+-s
+objectSink=-0.0512890000002
+-s
+retractionAmount=4500.0
+-s
+raftLineSpacing=3000.0
+-s
+filamentFlow=100.0
+-s
+startCode=M109 S190.0     ;Set Nozzle Temp and Wait
+M190 S0.0      ;Set Bed Temp and Wait
+G21           ;metric values
+G90           ;absolute positioning
+G28           ;Home
+G1 Z15.0 F300 ;move the platform down 15mm
+G92 E0        ;zero the extruded length
+G1 F200 E5    ;extrude 5mm of feed stock
+G92 E0        ;zero the extruded length again
+
+-s
+raftBaseLinewidth=1.0
+-s
+skirtDistance=0
+-s
+inset0Speed=50.0
+-s
+enableCombing=0.0
+-s
+printSpeed=50.0
+-s
+extrusionWidth=300.0
+-s
+upSkinCount=3.0
+-s
+moveSpeed=60.0
+-s
+supportLineDistance=0
+-s
+retractionAmountExtruderSwitch=14500.0
+-s
+posy=101500.0
+-s
+insetCount=3.0
+-s
+raftInterfaceLinewidth=0.4
+-s
+sparseInfillLineDistance=2000.0
+-s
+raftInterfaceThickness=0.27
+-s
+minimalLayerTime=5.0
+-s
+infillSpeed=50.0
+-s
+downSkinCount=3.0
+-s
+skirtLineCount=0
+-s
+raftMargin=5000.0
+-s
+supportExtruder=-1.0
+-s
+fanSpeedMin=71.0
+-o
+/Volumes/doc/Thierry/Documents/Informatique/3DPrinting/Git/3DPrinting/BracketSup/Bracket_Sup_V2.gcode
+/Volumes/doc/Thierry/Documents/Informatique/3DPrinting/Git/3DPrinting/BracketSup/Bracket_Sup_V2.stl
+###############END CURA SETTINGS##############
